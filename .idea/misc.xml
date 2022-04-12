@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.107" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/drawable/ic_baseline_star_24.xml" value="0.107" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/drawable/ic_star_unselected.xml" value="0.107" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/drawable/ic_star_white.xml" value="0.107" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/drawable/ic_star_yellow.xml" value="0.107" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/drawable/ripple_button.xml" value="0.11" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/drawable/selector_chackbox_star.xml" value="0.107" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/drawable/shape.xml" value="0.11" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/drawable/shape_bottomsheet.xml" value="0.11" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/drawable/shape_button.xml" value="0.11" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/layout/activity_contacts.xml" value="0.2" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/layout/activity_main.xml" value="0.1859375" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/layout/bottom_sheet.xml" value="0.2" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/layout/bottom_sheet_add_contact.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/layout/fragment_all_contacts.xml" value="0.2" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/layout/fragment_contactes_favorites.xml" value="0.2" />
+        <entry key="..\:/Users/joaop/AndroidStudioProjects/contacts/app/src/main/res/layout/item_contact.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
