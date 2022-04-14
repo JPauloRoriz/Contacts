@@ -2,10 +2,8 @@ package br.com.jpstudent.contacts.viewmodel
 
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Transformations
 import androidx.lifecycle.Transformations.switchMap
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.switchMap
 import br.com.jpstudent.contacts.R
 import br.com.jpstudent.contacts.domain.entities.Contact
 import br.com.jpstudent.contacts.domain.entities.TabsTypeContacts
@@ -26,9 +24,9 @@ class ContactsViewModel(
 ) : ViewModel() {
     val oppenBottomSheetLiveData = MutableLiveData<Unit?>()
     val successAddContactLiveData = MutableLiveData<String>()
-    private val tabFavoriteLiveData = MutableLiveData<TabsTypeContacts>(TabsTypeContacts.TabAll)
+    private val tabSelectedLiveData = MutableLiveData<TabsTypeContacts>(TabsTypeContacts.TabAll)
 
-    var contactsLiveData = switchMap(tabFavoriteLiveData) {currentTab->
+    var contactsLiveData = switchMap(tabSelectedLiveData) { currentTab->
         return@switchMap MutableLiveData(
             when(currentTab){
                 TabsTypeContacts.TabAll -> useCaseGetAllContacts.getAllContacts()
@@ -41,6 +39,7 @@ class ContactsViewModel(
         try {
             useCaseSaveContact.saveContact(name, number)
             successAddContactLiveData.value = context.getString(R.string.contact_save)
+            refresh()
 
         } catch (exception: DataEmptyException) {
             successAddContactLiveData.value = context.getString(R.string.data_isempty)
@@ -57,12 +56,15 @@ class ContactsViewModel(
     }
 
     fun selectTab(position: Int) {
-        tabFavoriteLiveData.value = TabsTypeContacts.getTabByPosition(position)
+        tabSelectedLiveData.value = TabsTypeContacts.getTabByPosition(position)
+    }
+    fun refresh(){
+        tabSelectedLiveData.value = tabSelectedLiveData.value
     }
 
     fun tapOnChangeFavorite(contact: Contact) {
         contact.isFavorite = !contact.isFavorite
         updateContactUseCase.updateContact(contact)
-        tabFavoriteLiveData.value = tabFavoriteLiveData.value
+        tabSelectedLiveData.value = tabSelectedLiveData.value
     }
 }

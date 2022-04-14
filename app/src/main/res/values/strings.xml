@@ -10,7 +10,7 @@
     <string name="write_number_contact">Digite o número</string>
     <string name="save">Salvar</string>
     <string name="contact_save">Contato adicionado com sucesso</string>
-    <string name="data_isempty">Preencha os dados</string>
+    <string name="data_isempty">Dados não preenchidos</string>
     <string name="lengt_name">O nome do contato deve ter pelo menos três caracter</string>
     <string name="format_invalid">Formato de número inválido</string>
 </resources>

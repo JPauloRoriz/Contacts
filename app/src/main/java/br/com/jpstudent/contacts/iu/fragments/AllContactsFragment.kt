@@ -45,6 +45,7 @@ class AllContactsFragment : Fragment() {
     private fun setupObservers() {
         viewModel.contactsLiveData.observe(viewLifecycleOwner) {
             adapter.contacts = it
+
         }
     }
 

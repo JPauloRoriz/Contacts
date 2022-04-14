@@ -25,7 +25,6 @@ class ContactsActivity : AppCompatActivity() {
         setFragment(contactsFragment)
         setupListeners()
         setupObservers()
-
     }
 
     private fun setupListeners() {
@@ -59,6 +58,7 @@ class ContactsActivity : AppCompatActivity() {
         }
         viewModel.successAddContactLiveData.observe(this) { message ->
             Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+            bottomSheet.dismiss()
         }
     }
 
